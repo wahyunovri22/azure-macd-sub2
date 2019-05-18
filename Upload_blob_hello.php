@@ -1,3 +1,4 @@
+
 <?php
 /**----------------------------------------------------------------------------------
 * Microsoft Developer & Platform Evangelism
@@ -43,10 +44,11 @@ use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
 $connectionString = "DefaultEndpointsProtocol=https;AccountName=wahyuwebapp;AccountKey=m8HpCvMx+p/cjmQT5DOVY5uFd2NpqJ+f7WcBI68nqCrcwd29C/q+u2O5ZLArZYcLn7wCBM36fpLQQzPHXgSwgw==;EndpointSuffix=core.windows.net";
 
+
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 
-$fileToUpload = "HelloWorld.txt";
+$fileToUpload = "building.png";
 
 if (!isset($_GET["Cleanup"])) {
     // Create container options object.
